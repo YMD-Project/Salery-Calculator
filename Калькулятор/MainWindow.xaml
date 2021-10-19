@@ -1,0 +1,28 @@
+﻿<Window x:Name="Калькулятор_зарпалты" x:Class="Калькулятор.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Калькулятор"
+        mc:Ignorable="d"
+        Title="Калькулятор процентов" Height="333" Width="313.5">
+    <Grid Margin="0,0,2,4">
+        <TextBox x:Name="txtOklad" HorizontalAlignment="Left" Height="24" Margin="14,32,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="131" PreviewTextInput="txtOklad_PreviewTextInput"/>
+        <Label Content="Оклад:" HorizontalAlignment="Left" Margin="14,6,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtPremiya" HorizontalAlignment="Left" Height="24" Margin="14,82,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="131" PreviewTextInput="txtPremiya_PreviewTextInput"/>
+        <Label Content="Премия:" HorizontalAlignment="Left" Margin="14,56,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtRabDay" HorizontalAlignment="Left" Height="24" Margin="14,137,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="131" PreviewTextInput="txtRabDay_PreviewTextInput"/>
+        <Label Content="Рабочие дни:" HorizontalAlignment="Left" Margin="14,111,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtOtrbDay" HorizontalAlignment="Left" Height="24" Margin="14,187,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="131" PreviewTextInput="txtOtrbDay_PreviewTextInput"/>
+        <Label Content="Отработанные дни:" HorizontalAlignment="Left" Margin="14,161,0,0" VerticalAlignment="Top"/>
+        <Label Content="Районный коэфицент:" HorizontalAlignment="Left" Margin="14,211,0,0" VerticalAlignment="Top"/>
+        <ComboBox Name="CmbRaionKof" Height="24" VerticalAlignment="Top" Margin="14,237,159,0">
+            <TextBlock>12%</TextBlock>
+            <TextBlock>13%</TextBlock>
+            <TextBlock>14%</TextBlock>
+            <TextBlock>15%</TextBlock>
+        </ComboBox>
+        <Button x:Name="BtnClear" Content="Очитска" HorizontalAlignment="Left" Margin="157,237,0,0" VerticalAlignment="Top" Width="131" Height="24" Click="BtnClear_Click"/>
+        <Button x:Name="BtnRaschet" Content="Расчёт" HorizontalAlignment="Left" Margin="157,187,0,0" VerticalAlignment="Top" Width="131" Height="24" Click="BtnRaschet_Click"/>
+    </Grid>
+</Window>
